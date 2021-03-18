@@ -1,0 +1,47 @@
+
+<div class="row">
+
+    <div class="col-md-6 offset-md-3 mt-4">
+<h4>signup</h4>
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <div class="form-group">
+      <label for="firstname">firstname</label>
+      <input type="text" name="fname" ngModel required #fname="ngModel"
+      class="form-control" id="firstname"  placeholder="Enter firstname">
+    </div>
+    <div class="form-group">
+      <label for="lastname">lastname</label>
+      <input type="text" name="lname" ngModel required #lname="ngModel"
+      class="form-control" id="lastname" placeholder="lastname">
+    </div>
+    <div class="form-group">
+        <label for="address">address</label>
+        <input type="text" name="address" ngModel required #address="ngModel"
+         class="form-control" id="address" placeholder="Address">
+      </div>
+      <div class="form-group">
+        <label for="email">email</label>
+        <input type="text" name="email" ngModel required #email="ngModel"
+        class="form-control" id="email" placeholder="email">
+      </div>
+      <div class="form-group">
+        <label for="password">password</label>
+        <input type="text" name="password" ngModel required #password="ngModel"
+        class="form-control" id="password" placeholder="password">
+      </div>
+      <div class="form-group">
+        <label for="dob">Dob</label>
+        <input type="text" name="dob" ngModel required #dob="ngModel"
+        class="form-control" id="dob" placeholder="dob">
+      </div>
+      <div class="form-group">
+        <label for="company">company</label>
+        <input type="text" name="company" ngModel required #company="ngModel"
+         class="form-control" id="company" placeholder="company">
+      </div>
+      
+    <button type="submit" class="btn btn-primary">signup</button>
+  </form>
+</div>
+</div>
